@@ -1,0 +1,22 @@
+def skipMultiples(limit,divide): 
+	"this function lists nunmbers 1-50 replacing multiples of 7 with different quotes for every multiple."
+	a=0
+	quote=0
+
+	list= ["Strive not to be a sucess, but rather to be of value. -Albert Einstein"
+		,"You miss 100% of the shots you don't take. -Wayne Gretzky"
+		,"The most difficult thing is the decision to act, the rest is merely tenacity. -Amelia Earhart"
+		,"We become what we think about. -Earl Nightingale"]
+
+	while a < limit:
+		a = a+1
+		if a%divide==0:
+			print list[quote]
+			quote = quote+1
+			if quote==len(list):
+				quote=0
+		else:
+			print (a)
+	return
+
+skipMultiples(50,7)
